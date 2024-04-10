@@ -48,12 +48,17 @@ export default defineConfig({
     },
 
     {
+      name: 'setup csrm',
+      testMatch: /csrm\.auth\.ts/
+    },
+
+    {
       name: 'chromium',
       use: {
         ...devices['Desktop Chrome'],
-        storageState: 'playwright/.auth/user.json',
+        storageState: 'playwright/.auth/csrm.json',
       },
-      dependencies: ['setup db', 'setup auth']
+      dependencies: ['setup csrm']
     }
 
     /* Test against mobile viewports. */
