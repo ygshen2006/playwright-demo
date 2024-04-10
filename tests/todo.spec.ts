@@ -1,6 +1,5 @@
 import { test, expect } from '../fixtures/todo-page-test'
 import { ToDoPage } from '../pages/ToDoPage';
-import { todo } from 'node:test';
 test.describe.skip("BVT test cases", () => {
     test.beforeAll(async () => {
         console.log("test");
@@ -23,7 +22,6 @@ test.describe.skip("BVT test cases", () => {
 });
 
 test.describe("github test cases", ()=>{
-
     test("test login", async ({page})=>{
         await page.goto("https://github.com");
         console.log("test")
