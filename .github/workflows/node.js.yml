@@ -17,7 +17,7 @@ jobs:
         node-version: [16.x]
         # See supported Node.js release schedule at https://nodejs.org/en/about/releases/
     steps:
-    # - uses: actions/checkout@v3
+    - uses: actions/checkout@v3
     # - name: Use Node.js ${{ matrix.node-version }}
     #   uses: actions/setup-node@v3
     #   with:
@@ -26,6 +26,6 @@ jobs:
     # - run: npm ci
     - name: go to
       run: |
-        cd playwright-demo\playwright-demo
+        cd playwright-demo/playwright-demo
     - name: run test
       run: npm run test
