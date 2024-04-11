@@ -1,7 +1,7 @@
-import { test, expect } from '../fixtures/user/user.login';
-import CCInqueryListPage from '../pages/ccinquery/list.page';
-import HomePage from '../pages/home/home.page';
-import { SearchText } from '../settings/search.constants';
+import { test, expect } from '../fixtures/user/user.login.ts';
+import CCInqueryListPage from '../pages/inquery/list.page.ts';
+import HomePage from '../pages/home/home.page.ts';
+import { SearchText } from '../settings/search.constants.ts';
 
 test.describe("test login", () => {
 

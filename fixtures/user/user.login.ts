@@ -1,4 +1,4 @@
-import {UserNameLoginPage} from "../../pages/user/user.name.login"
+import {UserNameLoginPage} from "../../pages/user/user.name.login.ts"
 import { test as base } from "@playwright/test"
 
 type Login = {

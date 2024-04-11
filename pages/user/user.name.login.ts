@@ -1,5 +1,5 @@
 import { Locator, Page } from "playwright-core";
-import { BasePage } from "../base.page";
+import { BasePage } from "../base.page.ts";
 
 export class UserNameLoginPage extends BasePage{
     private readonly tab: Locator = this.page.locator('#tab-0');

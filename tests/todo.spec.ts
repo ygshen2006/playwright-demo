@@ -1,5 +1,4 @@
-import { test, expect } from '../fixtures/todo-page-test'
-import { ToDoPage } from '../pages/ToDoPage';
+import { test, expect } from '../fixtures/todo-page-test.ts'
 test.describe("BVT test cases", () => {
     test.beforeAll(async () => {
         console.log("test");

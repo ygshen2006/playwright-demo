@@ -1,5 +1,5 @@
 import { test as base } from "@playwright/test"
-import { ToDoPage } from "../pages/ToDoPage"
+import { ToDoPage } from "../pages/ToDoPage.ts"
 
 type MyFixture = {
     toDoPage: ToDoPage

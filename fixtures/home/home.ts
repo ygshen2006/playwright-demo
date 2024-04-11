@@ -1,4 +1,4 @@
-import HomePage from "../../pages/home/home.page";
+import HomePage from "../../pages/home/home.page.ts";
 import { test as base } from "@playwright/test"
 
 type Home = {

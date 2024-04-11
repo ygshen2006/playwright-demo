@@ -1,7 +1,7 @@
 import { Page } from "@playwright/test";
-import TopBar from "../../components/home/top.bar";
-import { BasePage } from "../base.page";
-import { SearchText } from "../../settings/search.constants";
+import TopBar from "../../components/home/top.bar.ts";
+import { BasePage } from "../base.page.ts";
+import { SearchText } from "../../settings/search.constants.ts";
 
 export default class HomePage extends BasePage{
     private readonly topBar: TopBar = new TopBar(this.page);
