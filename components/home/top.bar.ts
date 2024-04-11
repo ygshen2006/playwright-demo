@@ -15,10 +15,11 @@ export default class TopBar{
         
     }
 
-    async search(text){
+    async search(text, expected){
         await this.toggleButton.click();
         await this.searchButton.click();
         await this.inputTextBox.fill(text);
-        debugger
+        
+        await this.dropDownLists.getByText(expected).click();
     }
 }
