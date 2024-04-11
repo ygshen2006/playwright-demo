@@ -33,6 +33,7 @@ export default defineConfig({
     screenshot: 'on',
     channel: "chrome",
     video: 'on'
+    
   },
 
   /* Configure projects for major browsers */
