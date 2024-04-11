@@ -28,7 +28,11 @@ export default defineConfig({
 
     /* Collect trace when retrying the failed test. See https://playwright.dev/docs/trace-viewer */
     trace: 'on-first-retry',
-    headless: false
+    ignoreHTTPSErrors: true,
+    headless: false,
+    screenshot: 'on',
+    channel: "chrome",
+    video: 'on'
   },
 
   /* Configure projects for major browsers */
@@ -55,10 +59,10 @@ export default defineConfig({
     {
       name: 'chromium',
       use: {
-        ...devices['Desktop Chrome'],
-        storageState: 'playwright/.auth/csrm.json',
-      },
-      dependencies: ['setup csrm']
+        ...devices['Desktop Chrome']
+        // storageState: 'playwright/.auth/csrm.json',
+      }
+      // dependencies: ['setup csrm']
     }
 
     /* Test against mobile viewports. */

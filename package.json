@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "npx playwright test todo.spec.ts",
+    "test": "npx playwright test user.login.spec.ts",
     "ui": "npx playwright test --ui"
   },
   "keywords": [],

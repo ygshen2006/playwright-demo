@@ -25,4 +25,4 @@ jobs:
     #     cache: 'npm'
     # - run: npm ci
     - name: run test
-      run: yarn test
+      run: npm run test
