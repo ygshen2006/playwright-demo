@@ -26,4 +26,10 @@ jobs:
     - name: install
       run: npm install
     - name: run test
-      run: npm run test
+      run: BASEURL=${{ secrets.baseUrl }} CR_USER_NAME=${{ secrets.CR_USER_NAME }} CR_PASSWORD=${{ secrets.CR_PASSWORD }} CC_USER_NAME=${{ secrets.CC_USER_NAME }} CC_PASSWORD=${{ secrets.CC_PASSWORD }} npx playwright test user.login.spec.ts
+    - uses: actions/upload-artifact@v4
+      if: ${{ !cancelled() }}
+      with:
+        name: playwright-report
+        path: playwright-report/
+        retention-days: 30

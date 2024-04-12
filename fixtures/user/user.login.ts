@@ -1,4 +1,4 @@
-import {UserNameLoginPage} from "../../pages/user/user.name.login.ts"
+import { UserNameLoginPage } from "../../pages/user/user.name.login.ts"
 import { test as base } from "@playwright/test"
 
 type Login = {
@@ -13,6 +13,6 @@ const test = base.extend<Login>({
         await use(loginPage);
     }
 });
-test.use({ baseURL: "https://cncsrmsit.dyson.cn/" });
+test.use({ baseURL: process.env.BASEURL ? process.env.BASEURL : "https://cncsrmsit.dyson.cn/" });
 export { test }
 export { expect } from '@playwright/test';
